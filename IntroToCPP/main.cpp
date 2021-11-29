@@ -46,6 +46,7 @@ int main()
 
 	strcat_s(fullName, firstName);
 	strcat_s(fullName, lastName);
+	strcpy_s(firstName, lastName);
 
 	std::cout << fullName << std::endl;
 
