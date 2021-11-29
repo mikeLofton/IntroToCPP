@@ -37,11 +37,19 @@ int main()
 		std::cout << i << std::endl;
 	}
 
-	char firstName[] = "Michael";
+	char firstName[32] = "Michael";
+	char lastName[32] = "";
+	char fullName[64] = "";
 
 	std::cout << firstName << std::endl;
-	std::cout << "22\n";
-	std::cin >> number;
-	std::cout << "The number is " << number;
+	std::cin >> lastName;
+
+	strcat_s(fullName, firstName);
+	strcat_s(fullName, lastName);
+
+	std::cout << fullName << std::endl;
+
+	system("pause");
+
 	return 0;
 }
