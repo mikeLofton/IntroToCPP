@@ -3,6 +3,7 @@
 class Entity
 {
 public:
+    Entity();
     Entity(char icon, float health, float attackPower, float defensePower);
 
     char getIcon() { return m_icon; }

@@ -1,10 +1,11 @@
 #include <iostream>
 #include <cstring>
-#include "Entity.h"
+#include "Engine.h"
 
 int main()
 {
-	Entity wompus = Entity('W', 1000, 5, -20);
+	Engine engine = Engine();
+	engine.run();
 
 	return 0;
 }
