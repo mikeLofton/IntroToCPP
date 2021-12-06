@@ -1,6 +1,7 @@
 #pragma once
 
-class Entity
+class Entity : 
+    public Actor
 {
 public:
     Entity();
